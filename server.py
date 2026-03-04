@@ -114,17 +114,17 @@ async def get_anomaly_alerts() -> dict:
 
 
 if __name__ == "__main__":
-    import sys
+    import os, sys
     if "--transport" in sys.argv:
         idx = sys.argv.index("--transport")
         transport = sys.argv[idx + 1] if idx + 1 < len(sys.argv) else "stdio"
     else:
-        transport = "stdio"
+        transport = os.environ.get("MCP_TRANSPORT", "stdio")
     if "--port" in sys.argv:
         idx = sys.argv.index("--port")
         port = int(sys.argv[idx + 1]) if idx + 1 < len(sys.argv) else 8788
     else:
-        port = 8788
+        port = int(os.environ.get("PORT", "8788"))
     if transport == "sse":
         mcp.run(transport="sse", host="::", port=port)
     else:
