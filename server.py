@@ -126,6 +126,6 @@ if __name__ == "__main__":
     else:
         port = int(os.environ.get("PORT", "8788"))
     if transport == "sse":
-        mcp.run(transport="sse", host="::", port=port)
+        mcp.run(transport="sse", host="0.0.0.0", port=port)
     else:
         mcp.run()
