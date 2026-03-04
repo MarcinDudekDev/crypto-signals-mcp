@@ -1,0 +1,13 @@
+# MCPize manifest - https://mcpize.com
+version: 1
+name: crypto-signals
+description: Real-time crypto volume anomaly detection across 50+ tokens. Detects unusual trading volume spikes that may signal price movements. Includes free scan, per-token analysis, and high-confidence anomaly alerts.
+runtime: python
+entry: server.py
+build:
+  install: pip install -r requirements.txt
+startCommand:
+  type: stdio
+  command: python
+  args:
+    - server.py
