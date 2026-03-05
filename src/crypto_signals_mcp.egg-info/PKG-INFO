@@ -1,0 +1,87 @@
+Metadata-Version: 2.4
+Name: crypto-signals-mcp
+Version: 0.1.0
+Summary: MCP server for real-time crypto volume anomaly detection across 50+ tokens
+Author-email: MarcinDudekDev <marcin@curlship.com>
+License-Expression: MIT
+Project-URL: Homepage, https://github.com/MarcinDudekDev/crypto-signals-mcp
+Project-URL: Repository, https://github.com/MarcinDudekDev/crypto-signals-mcp
+Project-URL: Issues, https://github.com/MarcinDudekDev/crypto-signals-mcp/issues
+Keywords: mcp,crypto,trading,signals,volume-anomaly,model-context-protocol
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Office/Business :: Financial
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: fastmcp>=3.0.0
+Requires-Dist: httpx>=0.27.0
+
+# CryptoSignals MCP Server
+
+MCP server for real-time crypto volume anomaly detection across 50+ tokens. Detects unusual trading activity, whale movements, and pump signals.
+
+## Features
+
+- **Volume anomaly detection** — Identifies tokens with unusual volume-to-market-cap ratios
+- **50+ tokens monitored** — Continuous scanning across major cryptocurrencies
+- **Anomaly classification** — Signals rated LOW, MODERATE, HIGH, or CRITICAL
+- **High-confidence alerts** — Filter for only the most actionable signals
+- **Live data** — Real-time prices, 24h changes, volume, and market cap
+
+## Tools
+
+| Tool | Description |
+|------|-------------|
+| `scan_all_tokens` | Scan all 50+ tokens for volume anomalies |
+| `analyze_token` | Detailed analysis for a specific token (BTC, ETH, SOL, etc.) |
+| `get_anomaly_alerts` | High-confidence alerts only (vol_mcap ratio above 5.0) |
+
+## Quick Start
+
+### Install
+
+```bash
+pip install fastmcp httpx
+```
+
+### Run
+
+```bash
+fastmcp run server.py
+```
+
+### Configure in Claude Desktop
+
+Add to your `claude_desktop_config.json`:
+
+```json
+{
+  "mcpServers": {
+    "crypto-signals": {
+      "command": "fastmcp",
+      "args": ["run", "server.py"]
+    }
+  }
+}
+```
+
+## Example Usage
+
+Ask your AI assistant:
+- "Scan all crypto tokens for volume anomalies"
+- "Analyze Bitcoin for unusual trading activity"
+- "Show me high-confidence crypto alerts"
+- "Which tokens have whale movement signals right now?"
+
+## How It Works
+
+The server connects to a live anomaly detection API that monitors trading volume across 50+ cryptocurrencies. It calculates volume-to-market-cap ratios to identify statistically unusual trading activity — often an early indicator of price movement, whale accumulation, or pump activity.
+
+## License
+
+MIT

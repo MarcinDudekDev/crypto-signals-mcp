@@ -1,0 +1,2 @@
+[console_scripts]
+crypto-signals-mcp = crypto_signals_mcp.server:main

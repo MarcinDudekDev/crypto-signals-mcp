@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+src/crypto_signals_mcp/__init__.py
+src/crypto_signals_mcp/server.py
+src/crypto_signals_mcp.egg-info/PKG-INFO
+src/crypto_signals_mcp.egg-info/SOURCES.txt
+src/crypto_signals_mcp.egg-info/dependency_links.txt
+src/crypto_signals_mcp.egg-info/entry_points.txt
+src/crypto_signals_mcp.egg-info/requires.txt
+src/crypto_signals_mcp.egg-info/top_level.txt
