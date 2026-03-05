@@ -2,6 +2,10 @@
 
 MCP server for real-time crypto volume anomaly detection across 50+ tokens. Detects unusual trading activity, whale movements, and pump signals.
 
+<a href="https://glama.ai/mcp/servers/@MarcinDudekDev/crypto-signals-mcp">
+  <img width="380" height="200" src="https://glama.ai/mcp/servers/@MarcinDudekDev/crypto-signals-mcp/badge" alt="Crypto Signals MCP server" />
+</a>
+
 ## Features
 
 - **Volume anomaly detection** — Identifies tokens with unusual volume-to-market-cap ratios
