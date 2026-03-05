@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "crypto-signals-mcp"
-version = "0.1.0"
+version = "0.1.1"
 description = "MCP server for real-time crypto volume anomaly detection across 50+ tokens"
 readme = "README.md"
 license = "MIT"
