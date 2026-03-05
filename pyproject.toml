@@ -1,10 +1,10 @@
 [build-system]
-requires = ["setuptools>=68.0", "wheel"]
-build-backend = "setuptools.build_meta"
+requires = ["hatchling"]
+build-backend = "hatchling.build"
 
 [project]
 name = "crypto-signals-mcp"
-version = "0.1.1"
+version = "1.0.1"
 description = "MCP server for real-time crypto volume anomaly detection across 50+ tokens"
 readme = "README.md"
 license = "MIT"
@@ -28,13 +28,11 @@ dependencies = [
     "httpx>=0.27.0",
 ]
 
+[tool.hatch.build.targets.wheel]
+packages = ["."]
+only-include = ["server.py"]
+
 [project.urls]
 Homepage = "https://github.com/MarcinDudekDev/crypto-signals-mcp"
 Repository = "https://github.com/MarcinDudekDev/crypto-signals-mcp"
 Issues = "https://github.com/MarcinDudekDev/crypto-signals-mcp/issues"
-
-[project.scripts]
-crypto-signals-mcp = "crypto_signals_mcp.server:main"
-
-[tool.setuptools.packages.find]
-where = ["src"]

@@ -1,6 +1,6 @@
 # CryptoSignals MCP Server
 
-<!-- mcp-name: io.github.marcindudekdev/crypto-signals -->
+<!-- mcp-name: io.github.MarcinDudekDev/crypto-signals-mcp -->
 
 MCP server for real-time crypto volume anomaly detection across 50+ tokens. Detects unusual trading activity, whale movements, and pump signals.
 
@@ -25,7 +25,7 @@ MCP server for real-time crypto volume anomaly detection across 50+ tokens. Dete
 ### Install
 
 ```bash
-pip install fastmcp httpx
+pip install crypto-signals-mcp
 ```
 
 ### Run

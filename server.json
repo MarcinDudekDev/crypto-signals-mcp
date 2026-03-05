@@ -1,18 +1,18 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-  "name": "io.github.marcindudekdev/crypto-signals",
+  "name": "io.github.MarcinDudekDev/crypto-signals-mcp",
   "title": "CryptoSignals",
-  "description": "Real-time crypto volume anomaly detection across 50+ tokens with pump signals.",
+  "description": "Real-time crypto volume anomaly detection across 50+ tokens for whale signals",
   "repository": {
     "url": "https://github.com/MarcinDudekDev/crypto-signals-mcp",
     "source": "github"
   },
-  "version": "0.1.1",
+  "version": "1.0.1",
   "packages": [
     {
       "registryType": "pypi",
       "identifier": "crypto-signals-mcp",
-      "version": "0.1.1",
+      "version": "1.0.1",
       "transport": {
         "type": "stdio"
       }
