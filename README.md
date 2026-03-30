@@ -12,6 +12,10 @@ MCP server for real-time crypto volume anomaly detection across 50+ tokens. Dete
 - **High-confidence alerts** — Filter for only the most actionable signals
 - **Live data** — Real-time prices, 24h changes, volume, and market cap
 
+## Hosted deployment
+
+A hosted deployment is available on [Fronteir AI](https://fronteir.ai/mcp/marcindudekdev-crypto-signals-mcp).
+
 ## Tools
 
 | Tool | Description |
